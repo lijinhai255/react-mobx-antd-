@@ -1,0 +1,112 @@
+.signIn {
+    padding: 0 .8rem 1rem;
+    input {
+        font-size: .32rem !important;
+        caret-color: #6191FB;
+    }
+    header {
+        padding : 1.2rem 0 .8rem 0;
+        position: relative;
+
+        h1 {
+            height     : .84rem;
+            font-size  : .6rem;
+            font-family: PingFangSC-Semibold;
+            font-weight: 600;
+            color      : rgba(53, 52, 66, 1);
+            line-height: .84rem;
+        }
+
+        .closePage {
+            width   : .4rem;
+            position: absolute;
+            top     : .6rem;
+            right   : -.2rem;
+        }
+
+    }
+    // 手机号输入框
+    .phone {
+        :global(.am-input-label.am-input-label-5) {
+            width: .28rem !important;
+            height: .28rem;
+            padding: 0;
+        }
+        img{
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .phone,
+    .pwd {
+        border-bottom: 1px solid #F6F7FB;
+    }
+    .pwdIcon {
+        width: 100%;
+    }
+    .forgotpwd {
+        text-align: right;
+        margin    : .18rem 0 0;
+
+        a {
+            font-size  : .28rem;
+            font-family: PingFangSC-Regular;
+            font-weight: 400;
+            color      : rgba(141, 144, 147, 1);
+            line-height: .4rem;
+        }
+    }
+
+    .signInBtn {
+        display      : block;
+        width        : 5.9rem;
+        height       : .96rem;
+        line-height  : .96rem;
+        font-size    : .32rem;
+        margin-top   : .8rem;
+        background   : rgba(97, 145, 251, 1);
+        border-radius: .48rem;
+        font-weight: 500;
+        color        : #fff !important;
+        text-align   : center;
+    }
+    .signInBtn.disabled {
+        opacity: .5;
+    }
+    .toSignUp {
+        text-align: center;
+        margin-top: .2rem;
+        a {
+            height     : .4rem;
+            font-size  : 14px;
+            font-family: PingFangSC-Regular;
+            font-weight: 400;
+            color      : rgba(97, 145, 251, 1);
+            line-height: .4rem;
+        }
+    }
+
+    :global(.am-list-item .am-input-label.am-input-label-5) {
+        position: absolute;
+        right   : 0;
+        width   : .4rem;
+        margin: 0;
+    }
+
+    :global(.am-list-item.am-input-item) {
+        padding-left: 0;
+    }
+
+    :global(.am-list-item.am-input-item + .am-list-item.am-input-item) {
+        margin-top: .64rem;
+    }
+
+    :global(.am-list-item .am-list-line::after) {
+        display: none;
+        opacity: 0;
+    }
+    @media (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx) {
+    }
+}

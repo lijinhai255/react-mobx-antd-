@@ -1,0 +1,144 @@
+.signup {
+    padding: 0 .8rem 1.5rem;
+
+    input {
+        font-size: .32rem !important;
+        caret-color: #6191fb;
+    }
+    // 手机号输入框样式修改
+    .phone {
+        .closeIcon {
+            position: absolute;
+            right: 0;
+            width: 100%;
+            height: 100%;
+        }
+        :global(.am-input-label.am-input-label-5){
+            position: absolute;
+            width: .28rem;
+            height: .28rem;
+            min-width: 14px;
+            min-height: 14px;
+            padding: 0;
+            margin: 0;
+            right: 0;
+        }
+    }
+    header {
+        padding : 1.2rem 0 .8rem ;
+        position: relative;
+
+        h1 {
+            height     : .84rem;
+            font-size  : .6rem;
+            font-family: PingFangSC-Semibold;
+            font-weight: 600;
+            color      : rgba(53, 52, 66, 1);
+            line-height: .84rem;
+        }
+
+        .closePage {
+            width   : .4rem;
+            position: absolute;
+            top     : .6rem;
+            right   : -.2rem;
+        }
+
+    }
+
+    .forgotpwd {
+        text-align: right;
+        margin    : .18rem 0 0;
+
+        a {
+            font-size  : .28rem;
+            font-family: PingFangSC-Regular;
+            font-weight: 400;
+            color      : rgba(141, 144, 147, 1);
+            line-height: .4rem;
+        }
+    }
+
+    .signInBtn {
+        display      : block;
+        width        : 5.9rem;
+        height       : .96rem;
+        line-height  : .96rem;
+        font-size    : .28rem;
+        margin-top   : .8rem;
+        background   : rgba(97, 145, 251, 1);
+        border-radius: .48rem;
+        color        : #fff;
+        text-align   : center;
+        font-weight: 500;
+        opacity      : 0.4976;
+    }
+
+
+    .toSignUp {
+        text-align : center;
+        margin-top : .2rem;
+        font-size  : 14px;
+        line-height: .4rem;
+        height     : .4rem;
+        color      : #8D9093;
+        font-family: PingFangSC-Regular;
+
+        a {
+            font-weight: 400;
+            color      : rgba(97, 145, 251, 1);
+        }
+    }
+    .timerBox,
+    .phone {
+        border-bottom: 1px solid #F6F7FB;
+    }
+    .timerBox{
+
+        .timer {
+            height        : .4rem;
+            font-size     : .28rem;
+            font-family   : PingFangSC-Regular;
+            font-weight   : 400;
+            color         : rgba(141, 144, 147, 1);
+            line-height   : .4rem;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+        :global(.am-input-label.am-input-label-5) {
+            position: absolute;
+            right   : 0;
+            width   : 2rem;
+            padding: 0 0 0 .2rem;
+            margin: 0;
+            background: #fff;
+            border-left: 1px solid #c4c4c4;
+        }
+    }
+    // 密码框样式
+    .pwdBox{
+        display: block;
+    }
+    // 全局样式修改
+    :global(.am-list-item.am-input-item + .am-list-item.am-input-item) {
+        margin-top: .64rem;
+    }
+    :global(.am-list-item .am-list-line){
+        padding: 0;
+    }
+
+    :global(.am-list-item.am-input-item) {
+        padding-left: 0;
+    }
+
+
+    :global(.am-list-item .am-list-line::after) {
+        opacity: 0;
+    }
+    // @media (-webkit-min-device-pixel-ratio: 2),
+    // (min-resolution: 2dppx) {
+    // }
+    :global(.am-button.am-button-disabled){
+        color: #fff;
+    }
+}
